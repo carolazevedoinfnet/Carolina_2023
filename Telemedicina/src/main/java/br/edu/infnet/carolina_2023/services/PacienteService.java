@@ -18,9 +18,9 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PacienteServices {
+public class PacienteService {
 
-    private Logger logger = Logger.getLogger(PacienteServices.class.getName());
+    private Logger logger = Logger.getLogger(PacienteService.class.getName());
 
 
     @Autowired
@@ -51,7 +51,7 @@ public class PacienteServices {
 
     public PacienteVO create(PacienteVO paciente) {
 
-        logger.info("Criar novo paciente!");
+        logger.info("Criar um novo cadastro de paciente!");
         var entity = DozerMapper.parseObject(paciente, Paciente.class);
         var vo = DozerMapper.parseObject(repository.save(entity),PacienteVO.class);
         vo.add(linkTo(methodOn(PacienteController.class).findById(vo.getKey())).withSelfRel());
@@ -63,7 +63,7 @@ public class PacienteServices {
         logger.info("Atualizar paciente");
 
         var entity = repository.findById(paciente.getKey())
-                .orElseThrow(() -> new ResourceNotFoundException("Não foi encontrado paciente com este ID"));
+                .orElseThrow(() -> new ResourceNotFoundException("Não foi encontrado um paciente com este ID"));
 
         entity.setNome(paciente.getNome());
         entity.setSobrenome(paciente.getSobrenome());
@@ -83,10 +83,10 @@ public class PacienteServices {
 
     public void delete(Long id) {
 
-        logger.info("Apagar um paciente");
+        logger.info("Apagar um registro de paciente");
 
         var entity = repository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Não foi encontrado paciente com este ID"));
+                .orElseThrow(() -> new ResourceNotFoundException("Não foi encontrado um paciente com este ID"));
         repository.delete(entity);
     }
 }

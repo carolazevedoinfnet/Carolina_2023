@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PacienteServicesTest {
+class PacienteServiceTest {
 
     @BeforeEach
     void setUp() {
