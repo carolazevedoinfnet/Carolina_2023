@@ -12,8 +12,7 @@ import java.util.List;
 
 import java.util.logging.Logger;
 
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
+
 
 
 
@@ -21,7 +20,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 @Service
 public class MedicoService {
 
-    private Logger logger = Logger.getLogger(MedicoService.class.getName());
+    private final Logger logger = Logger.getLogger(MedicoService.class.getName());
 
 
     @Autowired

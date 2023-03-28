@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class PacienteService {
 
-    private Logger logger = Logger.getLogger(PacienteService.class.getName());
+    private final Logger logger = Logger.getLogger(PacienteService.class.getName());
 
 
     @Autowired

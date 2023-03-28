@@ -27,43 +27,72 @@
       <label for="nome">Nome:</label>
       <input type="text" class="form-control" name="nome">
     </div>
-    
 
-    <div class="form-group">
+      <div class="form-group">
+          <label for="sobrenome">Sobrenome:</label>
+          <input type="text" class="form-control" name="sobrenome">
+      </div>
+
+      <div class="form-group">
+          <label for="nascimento">Data de Nascimento:</label> <input type="date"
+                                                            name="nascimento" required>
+      </div>
+
+      <div class="form-group">
+          <label for="mae">Mãe:</label>
+          <input type="text" class="form-control" name="mae">
+      </div>
+
+      <div class="form-group">
+          <label for="pai">Pai:</label>
+          <input type="text" class="form-control" name="pai">
+      </div>
+
+      <div class="form-group">
+          <label for="sexo">Sexo:</label>
+          <select name="sexo" class="form-control">
+              <option value="--">----</option>
+              <option value="Feminino">Feminino</option>
+              <option value="Masculino">Masculino</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+          <label for="sexo">Sexo:</label>
+          <div class="form-check">
+              <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="sexo" value="true"> Feminino
+              </label>
+          </div>
+          <div class="form-check">
+              <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="sexo" value="false" > Masculino
+              </label>
+          </div>
+
+      <div class="form-group">
+          <label for="cpf">CPF:</label>
+          <input type="text" class="form-control" name="cpf">
+      </div>
+
+
+      <div class="form-group">
       <label for="email">Email:</label>
       <input type="text" class="form-control" name="email">
     </div>
-    
-    	<div class="form-group">
-	  <label for="tipo">Tipo de Consulta:</label>
-		<div class="form-check">
-		  <label class="form-check-label">
-			<input type="radio" class="form-check-input" name="tipo" value="true"> Plano de Saúde
-		  </label>
-		</div>
-		<div class="form-check">
-		  <label class="form-check-label">
-			<input type="radio" class="form-check-input" name="tipo" value="false" > Particular
-		  </label>
-		</div>
-	</div>
 
-	
-    <div class="form-group">
-      <label for="plano">Plano de saúde:</label>
-		<select name="plano" class="form-control">
-			<option value="--">----</option>
-			<option value="Amil">Amil</option>
-			<option value="Bradesco">Bradesco</option>
-			<option value="Sul América">Sul América</option>
-			<option value="Omint">Omint</option>
-		</select>
-    </div>
     
       <div class="form-group">
-      <label for="usr">Número carteirinha:</label>
-      <input type="text" class="form-control" name="carteirinha">
+      <label for="telefone">Telefone:</label>
+      <input type="text" class="form-control" name="telefone">
     </div>
+
+          <div class="form-group">
+              <label for="dtAtualizacao">Data de Atualização:</label> <input type="date"
+                                                                name="dtAtualizacao" required>
+          </div>
+
+
 
     <button type="submit" class="btn btn-primary">Cadastrar</button>
   </form>

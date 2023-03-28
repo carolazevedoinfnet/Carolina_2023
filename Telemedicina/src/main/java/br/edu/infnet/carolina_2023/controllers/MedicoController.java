@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/medico")
+@RequestMapping("/medicos")
 public class MedicoController {
 
     @Autowired

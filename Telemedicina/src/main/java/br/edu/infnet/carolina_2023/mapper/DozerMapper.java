@@ -11,7 +11,7 @@ import com.github.dozermapper.core.Mapper;
 
 public class DozerMapper {
 
-    private static Mapper mapper = DozerBeanMapperBuilder.buildDefault();
+    private static final Mapper mapper = DozerBeanMapperBuilder.buildDefault();
 
 
 

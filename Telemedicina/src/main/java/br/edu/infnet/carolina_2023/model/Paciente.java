@@ -16,7 +16,7 @@ import jakarta.persistence.Table;
 
 
 @Entity
-@Table(name = "paciente")
+@Table(name = "pacientes")
 public class Paciente implements Serializable {
 
     private static final long serialVersionUID = 1L;

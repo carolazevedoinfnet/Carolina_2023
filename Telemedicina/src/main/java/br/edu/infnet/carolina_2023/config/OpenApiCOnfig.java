@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 public class OpenApiCOnfig {
 
     @Bean
-    public OpenAPI customerOpenAPI() {
+    OpenAPI customerOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
                     .title("Telemedicina")

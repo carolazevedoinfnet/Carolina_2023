@@ -1,5 +1,5 @@
 
-CREATE TABLE IF NOT EXISTS `paciente` (
+CREATE TABLE IF NOT EXISTS `pacientes` (
     `id` bigint NOT NULL AUTO_INCREMENT,
     `nome` varchar(80) NOT NULL,
     `sobrenome` varchar(80) NOT NULL,
